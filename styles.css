@@ -1,0 +1,26 @@
+p{
+    font-weight: bold;
+    
+}
+body{
+    background-image: url("https://clinicaseiko.com.br/wp-content/uploads/2020/09/Treze-Tilias-2.png.webp");
+}
+h1 {
+    text-align: center;
+    font-size: 36px;
+    padding: 20px;
+}
+.st-emotion-cache-1vt4y43 > button{
+    font-size: 20px;
+}
+
+.st-emotion-cache-uzeiqp {
+    color: #3b3b40;
+}
+.stAlert{
+    background-color: #dff6f1;
+}
+.label{
+    background-color: black;   
+    border-color: aquamarine;
+}
