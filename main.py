@@ -31,10 +31,10 @@ with st.form(key="pesquisa_satisfacao"):
          "Insira seu nome:"
 )
     input_experiencia = survey.select_slider(
-        "Em uma escala de 1 a 10, como você avaliaria sua experiência em nosso espaço?", options=["1", "2", "3", "3", "5", "6", "7", "8", "9", "10"], id="Q2"
+        "Em uma escala de 0 a 10, como você avaliaria sua experiência em nosso espaço?", options=["0", "1", "2", "3", "3", "5", "6", "7", "8", "9", "10"], id="Q2"
 )
     input_desempenho = survey.select_slider(
-        "Como você avalia nosso desempenho em solucionar suas necessidades?", options=["1", "2", "3", "3", "5", "6", "7", "8", "9", "10"], id="Q3"
+        "Como você avalia nosso desempenho em solucionar suas necessidades?", options=["0", "1", "2", "3", "3", "5", "6", "7", "8", "9", "10"], id="Q3"
 )
     input_retorno = survey.radio(
         "Você voltaria ao nosso consultório em outra oportunidade?", options=["👍", "👎"], horizontal=True, id="Q4"
