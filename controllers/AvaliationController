@@ -1,0 +1,19 @@
+import services.database as db
+import models.Avaliacao as avaliacao
+from typing import List
+
+def incluir(avaliacao):
+    count = db.cursor.execute("""
+    INSERT INTO avaliacao (desempenho, experiencia, retorno)
+    VALUES (?,?,?)""",
+    avaliacao.desempenho, avaliacao.experiencia, avaliacao.retorno).rowcont
+    db.cursor.commit()
+
+def SelecionarTodos():
+    db.cursor.execute("SELECT * FROM avaliacao")
+    costumerList= []
+
+    for row in db.cursor.fetchall():
+        costumerList.append(avaliacao.Avaliacao(row[0], row[1], row[2], row[3], row[4]))
+        
+    return costumerList
