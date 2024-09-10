@@ -3,6 +3,7 @@ from numpy.core.fromnumeric import size
 import streamlit as st
 import streamlit_survey as ss
 import pandas as pd
+from PIL import image
 
 survey = ss.StreamlitSurvey()
 
